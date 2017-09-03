@@ -1,5 +1,7 @@
 # Probot Metrics
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/probot/metrics.svg)](https://greenkeeper.io/)
+
 Track metrics for [probot](https://github.com/probot/probot) deployments
 
 Metrcis collected:

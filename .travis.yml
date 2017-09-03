@@ -1,6 +1,14 @@
 sudo: false
 language: node_js
 node_js:
-  - "7.7.1"
+- 7.7.1
 notifications:
   disabled: true
+before_install:
+- npm install -g npm@5
+- npm install -g greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
+env:
+  global:
+    secure: GhKfIa2IpV6S7C7udvXcC2K8Di0FtBi7SzgU/K2Z1SjXiNtRg639ypH7vzcnZ+LGzPzM8ZWPuDEemvBVIOkEAjGTHEK4/9OEa49S8GIOdNpqeGvmH6iMXMIdaYmEev9t+dTBsyMrQUw7mxvXS+UvnzrIBxACMV/h6M9gmqi1f+vk7mLBTdlgI+ZbwrPR4FpvI3T9C0I90tYrAtRxsmUVPV79mQ670u5D4a95Yat6bxo/nD2OTfZ0A16DP6EiAo4VSpmqnbfliHWxRSxYXhhWjD++EV3prK7SbybBSq37PsMqx0RX/SPmwjW0Ngc8MZY8h8PydLVaJDGjN1PKYe28LMsY1jwrnSI3YP/N4Bv22vXo8C7FUxtWtJ7oaAg64HfUeeaewUmz5svjXBWQMrUki3SxZ1QD7mJ+LTo84QPsA/pJ1Ak26X2vKHr+8SgNihhMSQEVDzGBpz850DjZW6rYU6jAma4b+Bk5nVXg6hhPVTXx3VrqB1LsqSOIHQSGpgADrVl0WoI/l/lKqPz2r+TCBdiHOdPur76erHZUUWHrfOKRTfcBdH9c2E5WucXwYVxbzUd8nSebqP9MNHIyDbzHJ+zGTsf/VNog/ZkibTQXlxN2/k1S1NIcrUFSo4lAbkmxGDxev2/UNxaHk3yK4ZQ7lES9mFU7Tbv5xhSGxwzxcuk=

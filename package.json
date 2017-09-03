@@ -10,7 +10,7 @@
     "test": "mocha && xo --extend probot"
   },
   "dependencies": {
-    "probot": "^0.8.0",
+    "probot": "^0.10.0",
     "universal-analytics": "^0.4.13"
   },
   "devDependencies": {
