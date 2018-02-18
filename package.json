@@ -10,7 +10,7 @@
     "test": "mocha && standard"
   },
   "dependencies": {
-    "probot": "^3.0.0",
+    "probot": "^5.0.1",
     "universal-analytics": "^0.4.13"
   },
   "devDependencies": {
